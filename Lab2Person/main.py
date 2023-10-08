@@ -1,5 +1,6 @@
 from person import *
 
+
 person1 = Person("Андрей", "Алексеев", 5)
 person2 = Person("Павел", "Павлов", 3)
 person3 = Person("Иван", "Иванов", 4)
