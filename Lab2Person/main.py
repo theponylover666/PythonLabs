@@ -1,4 +1,8 @@
-from person import *
+import sys
+
+sys.path.insert(1, '../../Classes')
+
+from person import Person
 
 
 person1 = Person("Андрей", "Алексеев", 5)
