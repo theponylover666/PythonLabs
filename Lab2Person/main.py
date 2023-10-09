@@ -1,6 +1,6 @@
 import sys
 
-sys.path.insert(1, '../../Classes')
+sys.path.insert(1, 'c:\\Users\\diman\\Лабы\\PythonLabs\\Classes')
 
 from person import Person
 
@@ -19,11 +19,12 @@ weakest_person = min(person1, person2, person3, key=lambda x: x.qualification)
 if weakest_person.qualification == person1.qualification:
     del weakest_person
     del person1
+    input()
 elif weakest_person.qualification == person2.qualification:
     del weakest_person
     del person2
+    input()
 else:
     del weakest_person
     del person3
-
-input()
+    input()
