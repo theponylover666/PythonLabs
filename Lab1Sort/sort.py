@@ -1,4 +1,7 @@
+import os.path
 import random
+import this
+
 
 # Создаем функцию для сортировки пузырьком
 def bubble_sort(arr):
@@ -21,8 +24,11 @@ def random_array(a,b,c):
 
 # Создаем функцию для чтения данных из файла
 def read_file(a):
+    file_name = a + ".txt"
+    current_dir = os.path.dirname(__file__)
+    file_path = os.path.join(current_dir, file_name)
     # Открываем файл с именем a и режимом чтения
-    file = open( a + ".txt", "r")
+    file = open(file_path, "r")
     # Считываем данные из файла и сохраняем их в переменную data
     data = file.read()
     # Закрываем файл
@@ -35,8 +41,11 @@ def read_file(a):
 
 # Создаем функцию для записи данных в файл
 def write_file(a, arr):
+    file_name = a + ".txt"
+    current_dir = os.path.dirname(__file__)
+    file_path = os.path.join(current_dir, file_name)
     # Открываем файл с именем a и режимом записи
-    file = open(a + ".txt", "w")
+    file = open(file_path, "w")
     # Преобразуем список в строку
     arr_str = str(arr)
     # Записываем строку в файл
