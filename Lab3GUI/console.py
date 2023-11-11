@@ -1,5 +1,4 @@
 import math
-
 from matplotlib import pyplot as plt
 from prettytable import PrettyTable
 
@@ -55,6 +54,7 @@ def main():
 
     print(table)
 
+    # Построение графика
     plt.plot(x_values, y_values)
     plt.title('График')
     plt.xlabel('Значения оси x')

@@ -3,7 +3,6 @@ from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-
 from console import function
 
 root = Tk()
